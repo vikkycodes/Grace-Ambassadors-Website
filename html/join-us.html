@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="/life.js"></script>
+</head>
+
+<body>
+    <div class="join-us_container">
+        <nav>
+            <span>
+                <h3>Grace Ambassadors World Outreach Ministries</h3>
+                <h3 class="nav_text_substitute">GAWOM</h3>
+                <img class="logo" src="../images/gasys-logo.png" alt="gasys logo">
+            </span>
+            <img class="hamburger_icon" onclick="show_hide()" src="../images/icon-hamburger.svg" alt="">
+            <ul id="menu">
+                <li>
+                    <a href="index.html">HOME</a>
+                    <a href="about.html">ABOUT</a>
+                    <a href="#">MEDIA</a>
+                    <a href="campus-fellowships.html">CAMPUS FELLOWSHIPS</a>
+                    <a href="event.html">EVENTS</a>
+                    <a href="our-pastors.html">OUR PASTORS</a>
+                    <a href="contact-us.html">CONTACT US</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="aboutUs_section join-us_section">
+            <div class="bible_verse join-the-train_section">
+                <p><i>"We are a Global Youth Ministry, <br>commissioned by God to raise a new <br> Generation of Christ
+                        centered leaders"</i></p>
+                <p><i>Join our train</i></p>
+            </div>
+
+            <div class="join-a-cell_content">
+                <h2>Join a Cell</h2>
+                <p>You can be a part of a small unit of believers meeting <br> somewhere around you.</p>
+                <ul>
+                    <li>
+                        <a href="">
+                            <img src="/images/icons8-whatsapp.png" alt="">
+                            <p>Ago-Okota Cell, Lagos +234 701 595 5834</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="/images/icons8-whatsapp.png" alt="">
+                            <p>Ilasamaja Cell, Lagos +234 904 0073 762</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="/images/icons8-whatsapp.png" alt="">
+                            <p>Transformer Cell, Lagos</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="/images/icons8-whatsapp.png" alt="">
+                            <p>Isolo Cell, +234 704 0105 428</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="special_meeting_and_event_content join-a-campus-fellowship">
+                <h2>Join a Campus Fellowship</h2>
+                <p>We have Campus Ministries where we provide support for <br> student believers to fulfill God's plans
+                    and purposes for <br> their lives</p>
+                <ul>
+                    <li>
+                        <a href="">
+                            <img src="/images/icons8-whatsapp.png" alt="">
+                            <p>GACF University of Ibadan, Ibadan. +234 812 8847 685</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="/images/icons8-whatsapp.png" alt="">
+                            <p>GACF University of Lagos, Lagos +234 818 8322 431</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="/images/icons8-whatsapp.png" alt="">
+                            <p>GACF University of Nigeria, Nsukka +234 906 8879 687</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="/images/icons8-whatsapp.png" alt="">
+                            <p>GACF Ekiti State University, Ado-Ekiti +234 703 0383 557</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="/images/icons8-whatsapp.png" alt="">
+                            <p>GACF Michael Okpara University of Agriculture, Umudike<br>+234 810 4562 230</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="form join-us_form">
+            <form action="post" id="contact-us_form">
+                <div class="form-group one">
+                    <label for="name">Name</label>
+                    <input type="text" placeholder="Full Name" id="name">
+                </div>
+                <div class="form-group two">
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Email" id="emil">
+                    <label for="number">Phone Number</label>
+                    <input type="number" placeholder="Number" id="number">
+                </div>
+                <p>Select your desired activity group</p>
+                <select>
+                    <option value=""></option>
+                    <option value="1">Music Team</option>
+                    <option value="2">Ushering</option>
+                    <option value="3">Media Department</option>
+                    <option value="4">Sanitation</option>
+                </select>
+            </form>
+            <label for="contact-us_form">Feedback</label>
+            <textarea name="" id="contact-us_form" cols="80" rows="10" placeholder="Message Us"></textarea>
+            <button type="submit">Send Message</button>
+        </div>
+
+        <div class="give_section">
+            <a class="give_link" onclick="modal()">Give to us</a>
+            <div id="give_modal">
+                <div class="give_modal">
+                    <h1>Our Bank Details</h1>
+                    <div class="details">
+                        <h3>Account Name: Grace Amb. World Outreach Min.</h3>
+                        <h3>Account Number: 0615576870</h3>
+                        <h3>Bank Name: GTBANK</h3>
+                    </div>
+                    <div class="modal_bible-verse">
+                        <p>Every man according as he purposeth in his heart, so let him give; not grudgingly, or of
+                            necessity: for God loveth a cheerful giver</p>
+                        <p><b>2 Corinthians 9:7</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="consent-form_section">
+            <h3>Do you wish to be a full member of Grace Ambassadors World Outreach Ministries?</h3>
+            <a href="consent-form.html">
+                <h4>click here to fill our consent form</h4>
+            </a>
+        </div>
+
+    </div>
+    <footer>
+        <div class="footer_first_section">
+            <span>
+                <img class="logo" src="../images/gasys-logo.png" alt="gasys logo">
+                <h3>G A W O M</h3>
+            </span>
+            <div class="social_media">
+                <ul>
+                    <li><a href="https://www.facebook.com/Grace-Ambassadors-Ministries-348874995291380">
+                            <img class="social-media-icons" src="../images/icon-facebook.svg" alt="">
+                        </a></li>
+                    <li><a href="#">
+                            <img class="social-media-icons" src="../images/icon-instagram.svg" alt="">
+                        </a></li>
+                    <li><a href="#">
+                            <img class="social-media-icons" src="../images/icon-youtube.svg" alt="">
+                        </a></li>
+                    <li><a href="https://wa.me/2349068879687">
+                            <img class="social-media-icons" src="../images/icons8-whatsapp.png" alt="">
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_second_section">
+            <span>
+                <img class="social-media-icons" src="../images/icons8-gmail-48.png" alt="email icon">
+                <p>graceambassadorsministries15@gmail.com</p>
+            </span>
+            <span>
+                <img class="social-media-icons" src="../images/icons8-location-48.png" alt="">
+                <h4>4, Gbeleyi Street, College Bus Stop, Isolo, Lagos State</h4>
+            </span>
+        </div>
+    </footer>
+</body>
+
+</html>

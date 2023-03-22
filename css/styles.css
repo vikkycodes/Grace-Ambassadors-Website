@@ -1,0 +1,1526 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+img {
+    height: 300px;
+    width: 350px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    line-height: 1.2em;
+    word-spacing: 1px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    margin: 5px;
+    font-size: 18px;
+    color: white;
+}
+
+h4, h5 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 13px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 120px;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.162);
+    z-index: 1;
+}
+
+span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45%;
+}
+
+.nav_text_substitute {
+    display: none;
+}
+
+.hamburger_icon {
+    height: 15px;
+    width: 20px;
+    display: none;
+}
+
+ul {
+    width: 100%;
+    height: 60px;
+    padding: 0;
+    border-top: 1px solid white;
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    height: 100%;
+}
+ 
+a {
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+    margin-left: 50px;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 100px;
+    border-radius: 30px;
+    background: linear-gradient(to right, #03055ec6, #023d8aca, #0077B6 );
+    border: none;
+    font-size: 10px;
+    transition: transform 0.5s ease;
+}
+
+button:focus {
+    transform: perspective(100px) translateZ(1px);
+}
+
+button a {
+    font-size: 10px;
+    font-weight: bold;
+    margin-left: 0;
+}
+
+.logo {
+    height: 60px;
+    width: 60px;
+    margin-bottom: 7px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    position: relative;
+}
+
+.hero img {
+    position: absolute;
+    z-index: -2;
+    height: 100%;
+    width: 100%;
+}
+
+.hero_img_overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    background: linear-gradient(to right, #03055e55, #2a6f977f)
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 250px;
+    border-bottom: 1px solid gray;
+    transition: 0.2s ease;
+}
+
+.main_section_p_substitute {
+    display: none;
+}
+
+
+.weekly_meetings {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background: linear-gradient(to left, #001233f9, transparent);
+    color: white;
+    height: 550px;
+    position: relative;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.weekly_meetings h2 {
+    margin-right: 75px;
+}
+
+.bg_image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.weekly_meetings_content_section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+    text-align: right;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.content_section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.content_section h4 {
+    padding-right: 10px;
+    border-right: 3px solid rgba(255, 255, 255, 0.634);
+}
+
+.our_sermon_section {
+    border-bottom: 0;
+}
+
+.sermon_section {
+    display: flex;
+    gap: 30px;
+    padding: 0 20px;
+    height: 400px;
+    position: relative;
+}
+
+.sub_sermon {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+video {
+    width: 450px;
+}
+
+.sermon_section button {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    height: 50px;
+    width: 150px;
+    font-size: 15px;
+    background-color: rgba(128, 128, 128, 0.112);
+}
+
+.message_slide_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 400px;
+    color: white;
+    line-height: 1.5em;
+    background-color: #2a6f97;
+    font-family: "Libre Baskerville", serif;
+}
+
+.message_slide_section p {
+    font-size: 17px;
+}
+
+.special_meeting_section {
+    border-bottom: none;
+}
+
+.special_meeting_cards {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card img {
+    height: 250px;
+    width: 270px;
+    border-radius: 10px 10px 0 0;
+}
+
+.card button {
+    height: 30px;
+    width: 80px;
+    border-radius: 30px;
+    color: white;
+    background: linear-gradient(to right, #03055ec6, #023d8aca, #0077B6 );
+}
+
+.card button:hover {
+    cursor: pointer;
+    background: none;
+    color: black;
+    border: 2px solid #03055ec6;
+}
+
+.more_event_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 700;
+    height: 50px;
+    width: 200px;
+    border-radius: 30px;
+    color: white;
+    background: linear-gradient(to left, #03055ec6, #023d8aca, #0077B6 );
+
+}
+
+.more_event_btn:hover {
+    cursor: pointer;
+    background: none;
+    color: black;
+    border: 2px solid #03055ec6;
+}
+
+
+/* about us styling */
+.about_us {
+    height: 600px;
+}
+
+.about_us .hero_img_overlay {
+    background: linear-gradient(to right, #03055e60, #2a6f9736)
+}
+
+.about_us h1{
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.about_us p {
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.about-us_p-substitute {
+    display: none;
+}
+
+.aboutUs_section {
+    display: flex;
+    padding: 70px 20px;
+    gap: 50px;
+    height: 400px;
+    width: 100%;
+}
+
+.aboutUs_section p {
+    line-height: 1.5em;
+    color: rgb(128, 128, 128);
+
+}
+
+.bible_verse {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    border-left: 5px solid rgba(128, 128, 128, 0.326);
+    padding-left: 20px;
+}
+
+.bible_verse p{
+    font-size: 20px;
+    color: rgba(128, 128, 128, 0.704);
+}
+
+.bible_verse h5 {
+    margin: 0;
+    font-size: 20px;
+    color: rgba(128, 128, 128, 0.704);
+}
+
+.bible_verse p:last-of-type {
+    display: none;
+}
+
+.mission_statement {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mission_statement p {
+    font-size: 13px;
+}
+
+.special_meeting_and_event_content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.checkermark_section {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+/* event styling */
+p {
+    line-height: 1.5em;
+}
+
+.event_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    gap: 10px;
+    margin-top: 200px;
+}
+
+.event_main p {
+    font-size: 15px;
+    color: rgb(128, 128, 128);
+}
+
+.event_main .weekly_meetings {
+    width: 100%;
+}
+
+.event_main .weekly_meetings p {
+    color: white;
+}
+
+.meeting-and-event_section {
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    width: 100%;
+    gap: 10px;
+    border-bottom: 1px solid black;
+}
+
+.event_meetings_second_section {
+    height: 550px;
+    padding: 0;
+    background: linear-gradient(to right, #00123300, transparent);
+}
+
+.event_meetings_content_second_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    background: linear-gradient(to right, #001233f9, transparent);
+    margin-top: 0 !important;
+    padding: 30px;
+    height: 100%;
+}
+
+.event_meetings_content_second_section h4 {
+    border-left: 3px solid rgba(255, 255, 255, 0.634);
+    border-right: none;
+    padding-left: 10px;
+}
+
+.meetings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 150px;
+    gap: 10px;
+}
+
+.content_section #read-more_link {
+    margin-left: 10px;
+    font-size: 15px;
+    font-style: italic;
+    color: #edae49;
+}
+
+.pre-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    color: rgb(128, 128, 128);
+}
+
+.pre-footer p:last-of-type {
+    display: none;
+}
+
+/* our pastor section */
+.our-pastor_container {
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+.our-pastor_container h3 {
+    color: black;
+    font-size: 25px;
+}
+
+.pastor_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    margin-top: 20px;
+}
+
+.pastor_card {
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    gap: 30px;
+    height: 500px;
+    width: 100%;
+    color: white;
+    border: 2px solid #0076b655;
+    border-radius: 10px;
+    background: linear-gradient(to right, #0076b681, #0076b6, #2a6f97);
+    position: relative;
+}
+
+.pastor_img {
+    width: 30%;
+}
+
+.pastor_img img {
+    border-radius: 10px;
+    box-shadow: 10px 10px 30px #0076b6;
+}
+
+.pastor_content {
+    display: flex;
+    gap: 20px;
+    width: 70%;
+    flex-direction: column;
+}
+
+.pastor_content h3 {
+    color: white;
+    text-align: center;
+}
+
+.pastor_content p {
+    font-size: 13px;
+}
+
+.social-media-platform {
+    display: flex;
+    border-top: none;
+    padding: 20px;
+    border-radius: 20px;
+    position: absolute;
+    top: 82%;
+    left: 82%;
+    background: linear-gradient(to left, #03055e, #023d8a, #0077B6 );
+}
+
+.social-media-platform img {
+    height: 20px;
+    width: 20px;
+}
+
+.social-media-platform a {
+    margin-left: 25px;
+}
+
+.our-pastor_sermon-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+    width: 100%;
+}
+
+.our-pastor_sermon-section p {
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(128, 128, 128);
+}
+
+.our-pastor_sermon-section h4 {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.881);
+}
+
+.our-pastor_sermon-section p:last-of-type  {
+    display: none;
+}
+
+/* contact us section */
+.contact-us_container p {
+    color: rgba(128, 128, 128, 0.86);
+    font-size: 15px;
+}
+
+.contact-us_content-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 200px;
+}
+
+.contact-hero h2,
+.contact-hero h4 {
+    color: white;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: row;
+    padding: 30px 50px;
+    gap: 70px;
+    height: 600px;
+    width: 100%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 60%;
+    gap: 20px;
+}
+
+.form button {
+    height: 40px;
+    background: linear-gradient(to right, #0012339e, #0076b695, #2a6f97aa);
+    color: white;
+}
+
+.form button:focus {
+    background: transparent;
+    border: 1px solid #0076b6;
+    color: rgba(0, 0, 0, 0.881);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.two {
+    width: 50%;
+}
+
+label {
+    display: block;
+    font-size: 13px;
+}
+
+input {
+    height: 50px;
+}
+
+input, textarea, select {
+    padding: 10px;
+    border: 1.5px solid grey;
+    border-radius: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: 0.5s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #0076b6;
+    outline: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sub_info {
+    display: flex;
+    gap: 10px;
+}
+
+.info img {
+    height: 20px;
+    width: 20px;
+}
+
+/* campus fellowship */
+
+.campus-fellowships_bible-verse {
+    height: 120px;
+}
+
+.campus-fellowship_pre-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(to top, rgba(128, 128, 128, 0.211), rgba(128, 128, 128, 0.211), transparent);
+    color: grey;
+    font-weight: 600;
+    height: 300px;
+    width: 100%;
+}
+
+.campus-fellowship_contact {
+    display: flex;
+    gap: 5px;
+}
+
+.campus-fellowship_contact img {
+    width: 20px;
+    height: 20px;
+    color: black;
+}
+
+/* join us section */
+.join-us_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0076b6e6;
+}
+
+.join-us_container nav a {
+    margin-left: 50px;
+}
+
+.join-us_container a {
+    margin-left: 0;
+}
+
+.join-us_section {
+    display: flex;
+    height: 600px;
+    padding-top: 200px;
+}
+
+.join-us_section h2,
+.join-us_section p {
+    color: white;
+}
+
+.join-us_section img {
+    height: 20px;
+    width: 20px;
+}
+
+.join-us_section ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    border-top: none;
+}
+
+.join-us_section a {
+    display: flex;
+    gap: 5px;
+}
+
+.join-the-train_section {    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    border-left: 5px solid whitesmoke;
+    padding-left: 20px;
+    height: 150px;
+}
+
+.join-the-train_section p:last-of-type {
+    display: block;
+}
+
+.join-a-cell_content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.join-us_form label,
+.join-us_form p {
+    color: white;
+}
+
+.join-us_form button {
+    border: 1px solid white;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    background: #023d8a;
+}
+
+select {
+    height: 50px;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+.give_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    position: relative;
+}
+
+.give_section a {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#give_modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    width: 60%;
+    padding: 80px 40px;
+    background-color: white;
+    position: absolute;
+    top: 100px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.give_section h1, h3 {
+    /* color: black; */
+}
+
+.give_section h3 {
+    margin-bottom: 20px;
+}
+
+.give_section p {
+    margin-top: 10px;
+}
+
+.consent-form_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 250px;
+    width: 100%;
+}
+
+.consent-form_section a {
+    text-decoration: underline;
+}
+
+/* consent form section */
+.consent-form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    text-align: left;
+    width: 100%;
+    padding: 150px 30px;
+    background-color: #0076b6;
+}
+
+.consent-form h1,
+.consent-form h5,
+.consent-form label
+ {
+    color: white;
+}
+
+.consent-form p {
+    color: white;
+    font-size: 15px;
+}
+
+
+.consent-form form {
+    width: 50%;
+}
+
+.consent-form span {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    color: white;
+}
+
+.checkbox {
+    display: flex;
+    height: 30px;
+    gap: 10px;
+    align-items: center;
+}
+
+.faith_statement,
+.Aims-and-Obj {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.compulsory_statement {
+    text-align: center;
+}
+
+.consent_statement {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 200px;
+}
+
+.consent_statement label {
+    display: inline;
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.consent_statement input {
+    width: 300px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    padding-bottom: 0;
+    color: white;
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid white;
+    background-color: #0076b6;
+}
+
+.agreements {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.declaration_statement {
+    text-align: center;
+    line-height: 1.7em;
+}
+
+.user_info #number {
+    color: black;
+}
+
+.form-group input {
+    border: 1px solid white;
+    color: white;
+}
+
+.user_info button {
+    border: 1px solid white;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+    background: #023d8a;
+}
+
+/* footer section */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 200px;
+    width: 100%;
+    padding: 0 20px;
+    background: linear-gradient(to right, #001233f9, #0076b6c4, #2a6f97db)
+}
+
+footer span {
+    height: 30px;
+}
+
+footer span .logo {
+    height: 60px;
+    width: 60px;
+}
+
+footer span h3 {
+    margin-top: 5px;
+    font-size: 20px;
+    color: white;
+    margin-left: -15px;
+}
+
+.footer_first_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.social-media-icons {
+    height: 25px;
+    width: 25px;
+}
+
+.social_media ul {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    border-top: none;
+}
+
+.social_media a {
+    margin-left: 0;
+}
+
+.social_media a:hover {
+    border-top: none;
+    color: none;
+    font-weight: 0;
+    padding: 0;
+}
+
+.footer_second_section {
+    display: flex;
+    gap: 30px;
+    color: white;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.footer_second_section h4 {
+    margin-top: 0;
+}
+
+.footer_second_section span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    height: 40px;
+}
+
+@media screen and (max-width: 450px){
+    body p {
+        font-size: 12px !important;
+    }
+
+    body h1,
+    body h2 {
+        font-size: 20px !important;
+    }
+
+    nav {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 0 20px;
+        height: 50px;
+    }
+    
+    nav span h3 {
+        display: none;
+    }
+    
+    .logo {
+            height: 40px;
+            width: 40px;
+    }
+
+    .nav_text_substitute {
+        display: block;
+        font-size: 12px;
+        margin-left: -7px;
+    }
+
+    .hamburger_icon {
+        display: block;
+        position: absolute;
+        right: 90%;
+        z-index: 1;
+    }
+
+    ul {
+        display: none;
+    }
+
+    nav li {
+        position: absolute;
+        left: 0;
+        top: 0;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+        height: 300px;
+        padding: 0 20px;
+        background: linear-gradient(to top, #0076b69f, rgba(7, 6, 6, 0.901));
+        transition: 2s ease;
+    }
+
+    a {
+        margin-left: 0;
+    }
+
+    .hero {
+        height: 300px;
+    }
+
+    .hero h1 {
+        font-size: 15px;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+    }
+
+    button {
+        height: 20px;
+        width: 70px;
+    }
+
+    button a {
+        font-size: 6px;
+    }
+
+    section {
+        height: 150px;
+    }
+
+    section h2 {
+        font-size: 15px;
+    }
+
+    .main_section_p {
+        display: none;
+    }
+
+    .main_section_p_substitute {
+        display: block;
+        text-align: center;
+    }
+
+    .weekly_meetings {
+        height: 250px;
+    }
+
+    .weekly_meetings h2 {
+        font-size: 15px;
+    }
+
+    .weekly_meetings_content_section {
+        margin-top: 20px;
+        gap: 10px;
+    }
+
+    .content_section h4 {
+        font-size: 10px;
+        margin-top: 0;
+        border-right: 2px solid rgba(255, 255, 255, 0.634);
+    }
+
+    .content_section p {
+        font-size: 9px;
+    }
+
+    .weekly_meetings_content_section button {
+        height: 15px;
+        width: 50px;
+        font-size: 6px;
+    }
+
+    .sermon_section {
+        flex-direction: column;
+        height: 650px;
+    }
+
+    .sermon_section h5 {
+        font-size: 15px;
+    }
+
+    video {
+        width: 350px;
+    }
+
+    .sermon_section button {
+        top: 90%;
+        left: 10px;
+        height: 30px;
+        width: 100px;
+        font-size: 10px;
+    }
+
+    .message_slide_section {
+        height: 250px;
+    }
+
+    .message_slide_section h5{
+        font-size: 13px;
+    }
+
+    .special_meeting_cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .card {
+        align-items: center;
+        text-align: center;
+    }
+
+    .card button {
+        height: 20px;
+        width: 50px;
+        font-size: 7px;
+    }
+
+    .more_event_btn {
+        height: 40px;
+        width: 150px;
+        font-size: 14px;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .footer_first_section {
+        gap: 20px;
+    }
+
+    .footer_first_section span {
+        margin-left: 15px;
+    }
+
+    .social-media-icons {
+        height: 20px;
+        width: 20px;
+    }
+
+    .footer_second_section {
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .footer_second_section span {
+        height: 20px;
+    }
+
+    .footer_second_section h4 {
+        font-size: 10px !important;
+    }
+    .footer_second_section p {
+        font-size: 10px !important;
+    }
+
+    .aboutUs_section {
+        flex-direction: column;
+        height: 700px;
+        padding: 50px;
+    }
+
+    .about_us {
+        height: 300px;
+    }
+
+    .about-us_p {
+        display: none;
+    }
+
+    .about-us_p-substitute {
+        display: block;
+        color: white;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .bible_verse p:first-child {
+        display: none;
+    }
+
+    .bible_verse h5 {
+        font-size: 15px;
+    }
+
+    .bible_verse p:last-of-type {
+        display: block;
+    }
+
+    .mission_statement {
+        gap: 10px;
+    }
+
+    .aboutUs_section h2 {
+        font-size: 20px;
+    }
+
+    .event_main {
+        margin-top: 50px;
+    }
+
+    .content_section h4 {
+        font-size: 11px;
+    }
+
+    .content_section p {
+        font-size: 10px !important;
+    }
+
+    #read-more_link {
+        font-size: 10px !important;
+    }
+
+    .event_meetings_content_second_section h4{
+        border-right: none;
+    }
+
+    .pre-footer {
+        height: 120px;
+    }
+
+    .pre-footer p:first-of-type {
+        display: none;
+    }
+
+    .pre-footer p:last-of-type {
+        display: block;
+        text-align: center;
+    }
+
+    .our-pastor_container {
+        padding-bottom: 60px;
+    }
+
+    .pastor_card {
+        height: 150%;
+        padding-bottom: 20px;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px 10px 0 10px;
+    }
+
+    .pastor_img {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .pastor_img img {
+        height: 300px;
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .pastor_section h3 {
+        margin-bottom: -60px !important;
+        font-size: 20px;
+    }
+
+    .social-media-platform {
+        top: 100%;
+        left: 40%;
+        width: 60.5%;
+        border-radius: 20px 0 20px 0;
+    }
+
+    .pastor_content {
+        width: 100%;
+    }
+
+    .our-pastor_sermon-section p:first-of-type {
+        display: none;
+    }
+
+    .our-pastor_sermon-section p:last-of-type {
+        display: block;
+    }
+
+    .contact-hero h2 {
+        font-size: 15px !important;
+        width: 70%;
+        text-align: center;
+        line-height: 1.5em;
+    }
+
+    .contact-hero h4 {
+        font-size: 12px;
+    }
+
+    .contact-us_content-section p {
+        width: 70%;
+        text-align: center;
+    }
+
+    .contact-info {
+        flex-direction: column-reverse;
+        height: 100%;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .form button {
+        width: 100px;
+    }
+
+    .two {
+        width: 100%;
+    }
+    
+    .campus-fellowship_pre-footer p:first-of-type {
+        width: 80%;
+        text-align: center;
+        font-style: oblique;
+    }
+
+    .join-us_container {
+        align-items: flex-start;
+        padding: 50px 30px 0 30px;
+    }
+
+    .join-us_section {
+        height: 800px;
+        gap: 50px;
+        padding: 30px 0;
+    }
+
+    .join-the-train_section {
+        height: 120px;
+    }
+
+    .join-the-train_section p:first-of-type {
+        display: block;
+    }
+
+    .join-a-cell_content {
+        height: 250px;
+    }
+
+    .join-a-campus-fellowship {
+        margin-top: 50px;
+        height: 450px;
+    }
+
+    .join-us_form textarea {
+        height: 150px;
+    }
+
+    .join-us_form button {
+        height: 30px;
+        font-size: 7px;
+    }
+
+    .give_section {
+        height: 70px;
+    }
+
+    .give_section a {
+        font-size: 14px;
+    }
+
+    .consent-form_section {
+        text-align: center;
+        line-height: 1.5em;
+        height: 120px;
+        margin-bottom: 50px;
+    }
+
+    .consent-form_section h3, h4 {
+        font-size: 15px !important;
+    }
+
+    .consent-form {
+        padding: 70px 30px;
+        gap: 20px;
+    }
+
+    .consent-form h1,
+    .consent-form h5,
+    .consent-form label {
+        margin-bottom: 0;
+    }
+
+    .consent-form form {
+        width: 100%;
+    }
+
+    .compulsory_statement {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .checkbox-special {
+        margin: 50px 0;
+    }
+
+    .declaration_statement {
+        line-height: 1.5rem;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .declaration_statement h5 {
+        font-size: 15px !important;
+    }
+
+    .user_info button {
+        font-size: 8px;
+        height: 30px;
+        width: 70px;
+    }
+}
