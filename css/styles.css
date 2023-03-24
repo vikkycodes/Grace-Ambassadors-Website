@@ -1311,9 +1311,14 @@ footer span h3 {
         font-size: 6px;
     }
 
+    .our_sermon_section p {
+        text-align: center;
+        width: 80%;
+    }
+
     .sermon_section {
         flex-direction: column;
-        height: 650px;
+        height: 550px;
     }
 
     .sermon_section h5 {
@@ -1321,14 +1326,17 @@ footer span h3 {
     }
 
     video {
-        width: 350px;
+        width: 300px;
     }
 
     .sermon_section button {
-        top: 90%;
-        left: 10px;
+        top: 89%;
+        left: 18px;
         height: 30px;
         width: 100px;
+    }
+
+    .sermon_section button a {
         font-size: 10px;
     }
 
@@ -1338,6 +1346,7 @@ footer span h3 {
 
     .message_slide_section h5{
         font-size: 13px;
+        width: 70%;
     }
 
     .special_meeting_cards {
@@ -1357,12 +1366,24 @@ footer span h3 {
         font-size: 7px;
     }
 
+    .card button a {
+        font-size: 7px;
+    }
+
+    .card button a:hover {
+        font-size: 6px;
+    }
+
     .more_event_btn {
         height: 30px;
         width: 100px;
     }
 
     .more_event_btn a {
+        font-size: 10px;
+    }
+
+    .more_event_btn a:hover {
         font-size: 10px;
     }
 
