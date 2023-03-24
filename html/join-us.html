@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div class="join-us_container">
+    <div class="join-us_container" onclick="removeModal()" id="join-us-container">
         <nav>
             <span>
                 <h3>Grace Ambassadors World Outreach Ministries</h3>
@@ -22,13 +22,13 @@
             <img class="hamburger_icon" onclick="show_hide()" src="../images/icon-hamburger.svg" alt="">
             <ul id="menu">
                 <li>
-                    <a href="index.html">HOME</a>
-                    <a href="index2.html">ABOUT</a>
-                    <a href="index9.html">MEDIA</a>
-                    <a href="index3.html">CAMPUS FELLOWSHIPS</a>
-                    <a href="index4.html">EVENTS</a>
-                    <a href="index5.html">OUR PASTORS</a>
-                    <a href="index6.html">CONTACT US</a>
+                    <a href="../index.html">HOME</a>
+                    <a href="about.html">ABOUT</a>
+                    <a href="media.html">MEDIA</a>
+                    <a href="campus.html">CAMPUS FELLOWSHIPS</a>
+                    <a href="event.html">EVENTS</a>
+                    <a href="pastor.html">OUR PASTORS</a>
+                    <a href="contact.html">CONTACT US</a>
                 </li>
             </ul>
         </nav>
@@ -139,6 +139,7 @@
         <div class="give_section">
             <a class="give_link" onclick="modal()">Give to us</a>
             <div id="give_modal">
+                <img src="/images/close-icon-black.png" alt="" id="cancel" onclick="cancel()">
                 <h1>Our Bank Details</h1>
                 <div class="details">
                     <h3>Account Name: Grace Amb. World Outreach Min.</h3>
@@ -155,7 +156,7 @@
 
         <div class="consent-form_section">
             <h3>Do you wish to be a full member of Grace Ambassadors World Outreach Ministries?</h3>
-            <a href="index8.html">
+            <a href="/html/consent-form.html">
                 <h4>click here to fill our consent form</h4>
             </a>
         </div>

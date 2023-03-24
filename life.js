@@ -15,3 +15,15 @@ function modal() {
   }
   return;
 }
+
+function cancel() {
+  return modal();
+}
+
+function removeModal() {
+  if (document.getElementById("give_modal").style.display === "inline") {
+    return modal;
+  } else {
+    return;
+  }
+}

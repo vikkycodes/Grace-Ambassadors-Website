@@ -251,6 +251,14 @@ video {
     background-color: rgba(128, 128, 128, 0.112);
 }
 
+.sermon_section button:hover {
+    border: 2px solid #023d8a;
+}
+
+.sermon_section button a:hover {
+    color: black;
+}
+
 .sermon_section button a {
     font-size: 14px;
 }
@@ -294,20 +302,18 @@ video {
     border-radius: 10px 10px 0 0;
 }
 
-.card button {
-    height: 30px;
-    border-radius: 30px;
-    background: linear-gradient(to right, #03055ec6, #023d8aca, #0077B6 );
-}
-
 .card button:hover {
     cursor: pointer;
-    background: none;
-    color: black !important;
-    border: 2px solid #03055ec6;
+    border: 2px solid #03055ea7;
 }
 
+.card button a {
+    font-size: 13px;
+}
 
+.card button a:hover {
+    color: black;
+}
 
 .more_event_btn {
     display: flex;
@@ -323,13 +329,16 @@ video {
 
 .more_event_btn:hover {
     cursor: pointer;
-    background: none;
-    color: black;
     border: 2px solid #03055ec6;
 }
 
 .more_event_btn a {
-    font-size: 15px;
+    font-size: 17px;
+}
+
+.more_event_btn a:hover {
+    font-size: 17px;
+    color: black;
 }
 
 
@@ -430,7 +439,7 @@ p {
     width: 100%;
     text-align: center;
     gap: 10px;
-    margin-top: 200px;
+    margin-top: 70px;
 }
 
 .event_main p {
@@ -449,7 +458,7 @@ p {
 .meeting-and-event_section {
     display: flex;
     flex-direction: column;
-    height: 150px;
+    height: 170px;
     width: 100%;
     gap: 10px;
     border-bottom: 1px solid black;
@@ -840,6 +849,11 @@ select {
     position: relative;
 }
 
+.join-us_form button {
+    font-size: 12px;
+}
+
+
 .give_section a {
     font-size: 20px;
     font-weight: bold;
@@ -860,6 +874,15 @@ select {
     border-radius: 10px;
     text-align: center;
     display: none;
+    position: relative;
+}
+
+#give_modal img {
+    position: absolute;
+    left: 90%;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
 }
 
 .give_section h1 {
@@ -1197,6 +1220,7 @@ footer span h3 {
         position: absolute;
         right: 90%;
         z-index: 1;
+        cursor: pointer;
     }
 
     ul {
@@ -1582,19 +1606,29 @@ footer span h3 {
         font-size: 7px;
     }
 
-    .give_section {
+    .give_section {        
+        display: flex;
+        justify-content: center;
         height: 70px;
+        width: 100%;
     }
 
     .give_section a {
         font-size: 14px;
     }
 
-    #give_modal {
-        height: 250px;
+    .give_link {
+        display: flex;
+        justify-content: center;
         width: 100%;
+    }
+
+    #give_modal {
+        height: 280px;
+        width: 4000px;
         padding: 20px 10px;
-        top: 50px;
+        top: 100px;
+        z-index: 1;
     }
 
     .give_section h3 {
